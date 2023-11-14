@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf');
+}
+
+@font-face {
+    font-family: 'idroid2';
+    src: url('__MACOSX/fontes/fFinish.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #DFDCBC;
+    height: 100vh;
+}
+
+.fundo{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.frente{
+    background-color: white;
+    border-left: 5px solid #ccc9af;
+    border-right: 5px solid #ccc9af;
+    border-bottom: 5px solid #ccc9af; 
+    border-radius: 0 0 10px 10px;
+}
+
+/* cabeçalho */
+
+header{
+    background-image: linear-gradient(to bottom, #176A3C, #03391A);
+    color: white;
+    padding: 10px;
+}
+
+header > h1{
+    text-align: center;
+    font-family: idroid2;
+    padding: 20px;
+    font-weight: 100;
+    font-size: normal;
+}
+
+header > p{
+    margin: 20px auto 30px;
+    text-align: center;
+    width: 40%;
+}
+
+nav > a{
+    text-decoration: none;
+    color: #93DBB6;
+    margin: 20px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav > a:hover{
+    background-color: #176C3E;
+    color: #03391a;
+}
+
+/* Conteúdo */
+
+main{
+    text-indent: 20px;
+}
+
+.geral{
+    padding: 0 15px;
+}
+
+p{
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.titulo1{
+    font-family: idroid;
+    padding: 20px 0 15px;
+    font-size: 2.3em;
+    color: #0C512A;
+}
+
+.titulo2{
+    font-family: idroid;
+    padding: 5px;
+    color: #0C512A;
+    background-image: linear-gradient(to right, #84E1AD 10%, white);
+}
+
+img{
+    width: 100%;
+    margin: auto;
+}
+
+.bugdroid{
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.destaque{
+    color: #0C512A;
+    font-weight: bold;
+}
+
+.link-destaque{
+    color: #0C512A;
+    font-weight: bold;
+    background-color: #84E1AD;
+    text-decoration: none;
+}
+
+.link-destaque:hover{
+    text-decoration: underline;
+}
+
+.video{
+    background-color: #03391A;
+    padding: 2%;
+}
+
+.video > iframe{
+    width: 100%;
+    max-width: 560px;
+    max-height: 315px; 
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+.final{
+    margin-top: 20px;
+}
+
+.final > h2{
+    background-color: #2FA866;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.final2{
+    box-sizing: border-box;
+    background-color: #C5EBD6;
+    margin-top: -20px;
+    border-radius: 0 0 10px 10px;
+    padding: 0 2% 2%;
+}
+
+.final2 > p{
+    padding-top: 2%;
+}
+
+.final2 > ol{
+    display: inline-block;
+    width: 33%;
+    padding-left: 0;
+}
+
+.final2 a{
+    color: black;
+}
+
+.link-destaque-final{
+    color: #0C512A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.link-destaque-final:hover{
+    text-decoration: underline;
+}
+
+
+
+/* rodapé */
+
+footer{
+    background-color: #1A5C38;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: 100;
+}
+
+footer p{
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.text-footer{
+    font-weight: 100;
+}
+
