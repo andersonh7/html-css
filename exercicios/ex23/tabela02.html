@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        *{
+        * {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1%;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        table {
             /* border: 1px solid black; */
             border-collapse: collapse;
             width: 500px;
+            position: relative;
         }
 
-        thead, tfoot{
+        thead th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
 
-        th, td{
+        tbody>tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        th,
+        td {
             border: 1px solid black;
             padding: 2%;
         }
 
-        .numero{
+        .numero {
             text-align: right;
         }
     </style>
 </head>
+
 <body>
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col" style="width: 145px;">% da pop. total</th>
             </tr>
         </thead>
 
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td><strong>151.058.725</strong></td>
+                <th scope="row">Total de habitantes</th>
+                <td class="numero"><strong>203.079.389</strong></td>
                 <td style="text-align: center; font-weight: bolder;">-</td>
             </tr>
         </tfoot>
-            
+
 
         <tbody>
             <tr>
@@ -87,7 +114,7 @@
                 <td class="numero">10.882.965</td>
                 <td class="numero">5,36%</td>
             </tr>
-            
+
             <tr>
                 <td> Pernambuco</td>
                 <td class="numero">9.058.931</td>
@@ -114,105 +141,198 @@
 
             <tr>
                 <td>Goiás
-                <td class="numero">7 056 495</td>
+                <td class="numero">7.056.495</td>
                 <td class="numero">3,47%</td>
             </tr>
 
             <tr>
                 <td>Maranhão
-                <td class="numero">6 775 805</td>
+                <td class="numero">6.775.805</td>
                 <td class="numero">3,34%</td>
             </tr>
 
             <tr>
                 <td>Paraíba
-                <td class="numero">3 974 687</td>
+                <td class="numero">3.974.687</td>
                 <td class="numero">1,96%</td>
             </tr>
 
             <tr>
                 <td> Amazonas
-                <td class="numero">3 941 613</td>
-                <td class="numero">	1,94%</td>
+                <td class="numero">3.941.613</td>
+                <td class="numero"> 1,94%</td>
             </tr>
 
             <tr>
                 <td>Espírito Santo
-                <td class="numero">3 833 712</td>
+                <td class="numero">3.833.712</td>
                 <td class="numero">1,89%</td>
             </tr>
 
             <tr>
                 <td>Mato Grosso
-                <td class="numero">3 658 649</td>
+                <td class="numero">3.658.649</td>
                 <td class="numero">1,8%</td>
             </tr>
 
             <tr>
                 <td>Rio Grande do Norte
-                <td class="numero">3 302 729</td>
+                <td class="numero">3.302.729</td>
                 <td class="numero">1,63%</td>
             </tr>
 
             <tr>
                 <td>Piauí
-                <td class="numero">3 272 199</td>
+                <td class="numero">3.272.199</td>
                 <td class="numero">1,61%</td>
             </tr>
 
             <tr>
                 <td>Alagoas
-                <td class="numero">3 127 683</td>
+                <td class="numero">3.127.683</td>
                 <td class="numero">1,54%</td>
             </tr>
-            
+
             <tr>
                 <td>Distrito Federal
-                <td class="numero">2 817 381</td>
+                <td class="numero">2.817.381</td>
                 <td class="numero">1,39%</td>
             </tr>
 
             <tr>
                 <td>Mato Grosso do Sul
-                <td class="numero">2 757 013</td>
+                <td class="numero">2.757.013</td>
                 <td class="numero">1,36%</td>
             </tr>
 
             <tr>
                 <td>Sergipe
-                <td class="numero">2 209 558</td>
+                <td class="numero">2.209.558</td>
                 <td class="numero">1,09%</td>
             </tr>
             <tr>
                 <td>Rondônia
-                <td class="numero">1 581 196</td>
+                <td class="numero">1.581.196</td>
                 <td class="numero">0,78%</td>
             </tr>
 
             <tr>
                 <td>Tocantins
-                <td class="numero">1 511 460</td>
+                <td class="numero">1.511.460</td>
                 <td class="numero">0,74%</td>
             </tr>
-            
+
             <tr>
                 <td>Acre
-                <td class="numero">830 018</td>
+                <td class="numero">830.018</td>
                 <td class="numero">0,41%</td>
             </tr>
 
             <tr>
                 <td>Amapá
-                <td class="numero">733 759</td>
+                <td class="numero">733.759</td>
                 <td class="numero">0,36%</td>
             </tr>
 
             <tr>
                 <td>Roraima
-                <td class="numero">636 707</td>
+                <td class="numero">636.707</td>
                 <td class="numero">0,31%</td>
             </tr>
         </tbody>
     </table>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita, nostrum reiciendis laudantium mollitia
+    illum quisquam et molestias eum minima cum quis, quo vero nobis placeat delectus! Omnis, nesciunt tempora!
+    Error eos non impedit, saepe et quod architecto cumque quae nobis eligendi nisi commodi porro fugiat asperiores?
+    Doloremque, aperiam provident recusandae neque praesentium vitae porro fugiat laboriosam mollitia alias debitis!
+    Asperiores debitis, cupiditate perspiciatis officia nihil dicta. Sit harum laborum ratione corporis assumenda,
+    fugit animi quibusdam explicabo illum iure fuga excepturi vel libero molestias similique cupiditate rem, rerum
+    ipsum quae?
+    Commodi sequi velit atque, expedita praesentium sunt nam eligendi soluta nisi quia? Ad amet impedit corporis
+    laborum id eligendi sunt explicabo, blanditiis adipisci nobis ipsa incidunt numquam fugit quis optio.
+    Aspernatur, eum dicta numquam praesentium, quidem id earum eos facere unde soluta nostrum recusandae quas sit
+    dolorum quibusdam aliquid optio rerum ullam incidunt adipisci, itaque mollitia molestias? Exercitationem, non
+    praesentium?
+    Atque commodi voluptatibus asperiores, amet deleniti provident aliquam eveniet nihil aperiam labore cupiditate
+    libero ea officiis earum aut quis sit repellendus! Voluptatem delectus corporis expedita cum quae quas nisi
+    voluptatum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita, nostrum reiciendis laudantium mollitia
+    illum quisquam et molestias eum minima cum quis, quo vero nobis placeat delectus! Omnis, nesciunt tempora!
+    Error eos non impedit, saepe et quod architecto cumque quae nobis eligendi nisi commodi porro fugiat asperiores?
+    Doloremque, aperiam provident recusandae neque praesentium vitae porro fugiat laboriosam mollitia alias debitis!
+    Asperiores debitis, cupiditate perspiciatis officia nihil dicta. Sit harum laborum ratione corporis assumenda,
+    fugit animi quibusdam explicabo illum iure fuga excepturi vel libero molestias similique cupiditate rem, rerum
+    ipsum quae?
+    Commodi sequi velit atque, expedita praesentium sunt nam eligendi soluta nisi quia? Ad amet impedit corporis
+    laborum id eligendi sunt explicabo, blanditiis adipisci nobis ipsa incidunt numquam fugit quis optio.
+    Aspernatur, eum dicta numquam praesentium, quidem id earum eos facere unde soluta nostrum recusandae quas sit
+    dolorum quibusdam aliquid optio rerum ullam incidunt adipisci, itaque mollitia molestias? Exercitationem, non
+    praesentium?
+    Atque commodi voluptatibus asperiores, amet deleniti provident aliquam eveniet nihil aperiam labore cupiditate
+    libero ea officiis earum aut quis sit repellendus! Voluptatem delectus corporis expedita cum quae quas nisi
+    voluptatum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita, nostrum reiciendis laudantium mollitia
+    illum quisquam et molestias eum minima cum quis, quo vero nobis placeat delectus! Omnis, nesciunt tempora!
+    Error eos non impedit, saepe et quod architecto cumque quae nobis eligendi nisi commodi porro fugiat asperiores?
+    Doloremque, aperiam provident recusandae neque praesentium vitae porro fugiat laboriosam mollitia alias debitis!
+    Asperiores debitis, cupiditate perspiciatis officia nihil dicta. Sit harum laborum ratione corporis assumenda,
+    fugit animi quibusdam explicabo illum iure fuga excepturi vel libero molestias similique cupiditate rem, rerum
+    ipsum quae?
+    Commodi sequi velit atque, expedita praesentium sunt nam eligendi soluta nisi quia? Ad amet impedit corporis
+    laborum id eligendi sunt explicabo, blanditiis adipisci nobis ipsa incidunt numquam fugit quis optio.
+    Aspernatur, eum dicta numquam praesentium, quidem id earum eos facere unde soluta nostrum recusandae quas sit
+    dolorum quibusdam aliquid optio rerum ullam incidunt adipisci, itaque mollitia molestias? Exercitationem, non
+    praesentium?
+    Atque commodi voluptatibus asperiores, amet deleniti provident aliquam eveniet nihil aperiam labore cupiditate
+    libero ea officiis earum aut quis sit repellendus! Voluptatem delectus corporis expedita cum quae quas nisi
+    voluptatum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita, nostrum reiciendis laudantium mollitia
+    illum quisquam et molestias eum minima cum quis, quo vero nobis placeat delectus! Omnis, nesciunt tempora!
+    Error eos non impedit, saepe et quod architecto cumque quae nobis eligendi nisi commodi porro fugiat asperiores?
+    Doloremque, aperiam provident recusandae neque praesentium vitae porro fugiat laboriosam mollitia alias debitis!
+    Asperiores debitis, cupiditate perspiciatis officia nihil dicta. Sit harum laborum ratione corporis assumenda,
+    fugit animi quibusdam explicabo illum iure fuga excepturi vel libero molestias similique cupiditate rem, rerum
+    ipsum quae?
+    Commodi sequi velit atque, expedita praesentium sunt nam eligendi soluta nisi quia? Ad amet impedit corporis
+    laborum id eligendi sunt explicabo, blanditiis adipisci nobis ipsa incidunt numquam fugit quis optio.
+    Aspernatur, eum dicta numquam praesentium, quidem id earum eos facere unde soluta nostrum recusandae quas sit
+    dolorum quibusdam aliquid optio rerum ullam incidunt adipisci, itaque mollitia molestias? Exercitationem, non
+    praesentium?
+    Atque commodi voluptatibus asperiores, amet deleniti provident aliquam eveniet nihil aperiam labore cupiditate
+    libero ea officiis earum aut quis sit repellendus! Voluptatem delectus corporis expedita cum quae quas nisi
+    voluptatum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita, nostrum reiciendis laudantium mollitia
+    illum quisquam et molestias eum minima cum quis, quo vero nobis placeat delectus! Omnis, nesciunt tempora!
+    Error eos non impedit, saepe et quod architecto cumque quae nobis eligendi nisi commodi porro fugiat asperiores?
+    Doloremque, aperiam provident recusandae neque praesentium vitae porro fugiat laboriosam mollitia alias debitis!
+    Asperiores debitis, cupiditate perspiciatis officia nihil dicta. Sit harum laborum ratione corporis assumenda,
+    fugit animi quibusdam explicabo illum iure fuga excepturi vel libero molestias similique cupiditate rem, rerum
+    ipsum quae?
+    Commodi sequi velit atque, expedita praesentium sunt nam eligendi soluta nisi quia? Ad amet impedit corporis
+    laborum id eligendi sunt explicabo, blanditiis adipisci nobis ipsa incidunt numquam fugit quis optio.
+    Aspernatur, eum dicta numquam praesentium, quidem id earum eos facere unde soluta nostrum recusandae quas sit
+    dolorum quibusdam aliquid optio rerum ullam incidunt adipisci, itaque mollitia molestias? Exercitationem, non
+    praesentium?
+    Atque commodi voluptatibus asperiores, amet deleniti provident aliquam eveniet nihil aperiam labore cupiditate
+    libero ea officiis earum aut quis sit repellendus! Voluptatem delectus corporis expedita cum quae quas nisi
+    voluptatum!</p>
+v
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita, nostrum reiciendis laudantium mollitia
+    illum quisquam et molestias eum minima cum quis, quo vero nobis placeat delectus! Omnis, nesciunt tempora!
+    Error eos non impedit, saepe et quod architecto cumque quae nobis eligendi nisi commodi porro fugiat asperiores?
+    Doloremque, aperiam provident recusandae neque praesentium vitae porro fugiat laboriosam mollitia alias debitis!
+    Asperiores debitis, cupiditate perspiciatis officia nihil dicta. Sit harum laborum ratione corporis assumenda,
+    fugit animi quibusdam explicabo illum iure fuga excepturi vel libero molestias similique cupiditate rem, rerum
+    ipsum quae?
+    Commodi sequi velit atque, expedita praesentium sunt nam eligendi soluta nisi quia? Ad amet impedit corporis
+    laborum id eligendi sunt explicabo, blanditiis adipisci nobis ipsa incidunt numquam fugit quis optio.
+    Aspernatur, eum dicta numquam praesentium, quidem id earum eos facere unde soluta nostrum recusandae quas sit
+    dolorum quibusdam aliquid optio rerum ullam incidunt adipisci, itaque mollitia molestias? Exercitationem, non
+    praesentium?
+    Atque commodi voluptatibus asperiores, amet deleniti provident aliquam eveniet nihil aperiam labore cupiditate
+    libero ea officiis earum aut quis sit repellendus! Voluptatem delectus corporis expedita cum quae quas nisi
+    voluptatum!</p>
 </body>
+
 </html>
