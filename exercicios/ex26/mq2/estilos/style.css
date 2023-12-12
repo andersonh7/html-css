@@ -1,1 +1,21 @@
 /* Configuração geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+    padding: 4%;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.488);
+}
