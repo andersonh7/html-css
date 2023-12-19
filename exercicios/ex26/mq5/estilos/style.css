@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,11 +9,11 @@
 
 /* cabeçalho */
 
-header{
+header {
     background-color: rgb(155, 155, 155);
 }
 
-header h1{
+header h1 {
     text-align: center;
     padding: 2%;
 
@@ -22,16 +22,34 @@ header h1{
 
 /* menu */
 
-menu li{
+#burguer {
+    background-color: rgb(83, 83, 83);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
+menu li {
     list-style-type: none;
     background-color: rgb(102, 102, 102);
 }
 
-menu li:hover{
+menu li:hover {
     background-color: rgb(126, 126, 126);
 }
 
-menu a{
+menu a {
     display: block;
     padding: 1%;
     text-decoration: none;
@@ -43,15 +61,15 @@ menu a{
 
 /* corpo */
 
-body{
- background-color: lightgray;
+body {
+    background-color: lightgray;
 }
 
-main{
+main {
     margin-top: 1%;
 }
 
-article{
+article {
     margin: auto;
     width: 90vw;
     background-color: white;
@@ -62,13 +80,12 @@ article{
 
 /* conteúdo */
 
-article h1{
+article h1 {
     padding: 3%;
 }
 
-article p{
+article p {
     text-indent: 20px;
     padding: 0 3% 3%;
     text-align: justify;
 }
-
